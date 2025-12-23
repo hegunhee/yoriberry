@@ -109,21 +109,57 @@ Repository를 만들어도 단순히 SDK 메서드를 래핑만 하고 추가 �
 
 **핵심 원칙**: Repository 레이어는 **실제로 필요할 때만** 추가하세요. 과도한 추상화는 오히려 코드를 복잡하게 만듭니다.
 
-## Controller에서 Repository 사용하기
+## Controller에서 Repository 사용하기 (Provider 패턴)
+
+**✅ 권장: Repository를 Provider로 관리**
 
 ```dart
-// Repository 정의
+// 1. Repository를 Provider로 등록
+final githubRepositoryProvider = Provider<GitHubRepository>((ref) {
+  return GitHubRepository();
+});
+
+// 2. Repository 정의
 class GitHubRepository {
-  Future<GithubRepoModel> getRepo({required String owner, required String repo}) async {
-    // API 호출 로직
+  static const _baseUrl = 'https://api.github.com';
+
+  Future<GithubRepoModel> getRepo({
+    required String owner,
+    required String repo,
+  }) async {
+    final url = Uri.parse('$_baseUrl/repos/$owner/$repo');
+    final response = await http.get(url);
+
+    if (response.statusCode != 200) {
+      throw Exception('Failed to load repository: ${response.statusCode}');
+    }
+
+    final data = jsonDecode(response.body) as Map<String, dynamic>;
+    return GithubRepoModel.fromJson(data);
   }
 }
 
-// Controller에서 사용
+// 3. Controller에서 Provider를 통해 주입
 class GitHubNotifier extends AsyncNotifier<GithubRepoModel> {
-  final _repository = GitHubRepository();
-
   @override
-  Future<GithubRepoModel> build() => _repository.getRepo(owner: 'foo', repo: 'bar');
+  Future<GithubRepoModel> build() {
+    final repository = ref.read(githubRepositoryProvider);
+    return repository.getRepo(
+      owner: 'blueberry-team',
+      repo: 'blueberry_template',
+    );
+  }
 }
+
+// 위젯에서 사용 예시
+FloatingActionButton(
+  onPressed: () => ref.invalidate(githubProvider),
+  child: Icon(Icons.refresh),
+)
 ```
+
+**장점:**
+- 테스트 시 Mock Repository로 쉽게 교체 가능
+- 의존성이 명시적으로 관리됨
+- Repository 인스턴스를 여러 Controller에서 공유 가능
+- Riverpod 생태계와 일관성 유지

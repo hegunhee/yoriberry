@@ -16,23 +16,23 @@ class SampleScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final isDark = ref.watch(themeControllerProvider) == ThemeMode.dark;
     final todos = ref.watch(todoControllerProvider);
-    final githubRepositoryAsync = ref.watch(githubProvider);
+    final githubRepoInfo = ref.watch(githubProvider);
     final colors = context.colors;
 
     return Scaffold(
       appBar: AppBar(
-        title: githubRepositoryAsync.hasValue
+        title: githubRepoInfo.hasValue
             ? Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Text(githubRepositoryAsync.value!.name),
+                  Text(githubRepoInfo.value!.name),
                   const SizedBox(width: 8),
                   Row(
                     children: [
                       const Icon(Icons.star, size: 16),
                       const SizedBox(width: 4),
                       Text(
-                        '${githubRepositoryAsync.value!.stargazersCount}',
+                        '${githubRepoInfo.value!.stargazersCount}',
                         style: const TextStyle(fontSize: 14),
                       ),
                     ],

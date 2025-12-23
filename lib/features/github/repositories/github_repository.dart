@@ -1,7 +1,13 @@
 import 'dart:convert';
 
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:http/http.dart' as http;
 import 'package:template/features/github/models/github_repo_model.dart';
+
+/// GitHub Repository Provider
+final githubRepositoryProvider = Provider<GitHubRepository>((ref) {
+  return GitHubRepository();
+});
 
 /// GitHub API 레포지토리
 class GitHubRepository {
