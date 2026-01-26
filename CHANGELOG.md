@@ -4,16 +4,6 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
-## [0.2.1] - 2025-01-30
-
-### Changed
-- Flutter 버전 3.38.5 → 3.38.8 업데이트
-- 패키지 업데이트
-  - `google_fonts`: 6.3.3 → 8.0.0
-  - `flutter_riverpod`: 3.0.3 → 3.2.0
-  - `firebase_core`: 4.3.0 → 4.4.0
-  - `firebase_crashlytics`: 5.0.6 → 5.0.7
-
 ## [0.2.0] - 2024-12-24
 
 ### Added

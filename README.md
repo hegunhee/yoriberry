@@ -11,7 +11,7 @@ Flutter 프로젝트를 빠르게 시작할 수 있는 심플한 템플릿
 
 ### FVM 사용 (권장)
 
-이 프로젝트는 FVM으로 Flutter 버전을 관리합니다 (v3.38.8).
+이 프로젝트는 FVM으로 Flutter 버전을 관리합니다 (v3.38.5).
 
 ```bash
 # FVM 설치 (처음 한 번만)
@@ -75,13 +75,13 @@ lib/
 
 ## 주요 패키지
 
-- `flutter_riverpod: ^3.2.0` - 상태 관리
+- `flutter_riverpod: ^3.0.3` - 상태 관리
 - `easy_localization: ^3.0.8` - 다국어 지원
-- `google_fonts: ^8.0.0` - 폰트
-- `http: ^1.6.0` - HTTP 클라이언트
-- `firebase_core: ^4.4.0` - Firebase 코어
-- `firebase_crashlytics: ^5.0.7` - 크래시 리포팅
-- `pedantic_mono: ^1.35.0` - 린트 규칙
+- `google_fonts: ^6.3.2` - 폰트
+- `http: ^1.2.2` - HTTP 클라이언트
+- `firebase_core: ^4.2.0` - Firebase 코어
+- `firebase_crashlytics: ^5.0.3` - 크래시 리포팅
+- `pedantic_mono: ^1.34.0` - 린트 규칙
 
 ## 📚 문서
 
