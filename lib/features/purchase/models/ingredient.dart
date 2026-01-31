@@ -2,7 +2,6 @@ import 'package:template/features/purchase/models/substitute.dart';
 
 /// 재료 정보를 담는 클래스
 class Ingredient {
-
   /// 재료 생성자
   const Ingredient({
     required this.name,

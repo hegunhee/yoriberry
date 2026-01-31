@@ -53,7 +53,6 @@ class IngredientController extends Notifier<IngredientState> {
 
 /// 재료 관리 상태
 class IngredientState {
-
   /// 재료 관리 상태
   const IngredientState({
     required this.ingredients,

@@ -1,6 +1,5 @@
 /// 대체 재료 정보를 담는 클래스
 class Substitute {
-
   /// 대체 재료 생성자
   const Substitute({
     required this.name,

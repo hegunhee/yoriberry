@@ -116,7 +116,6 @@ class IngredientPurchaseScreen extends ConsumerWidget {
 
 /// 재료 카드 위젯
 class _IngredientCard extends StatefulWidget {
-
   const _IngredientCard({
     required this.name,
     required this.imageUrl,
