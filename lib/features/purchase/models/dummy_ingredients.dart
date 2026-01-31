@@ -10,20 +10,18 @@ final dummyIngredients = <Ingredient>[
       Substitute(
         name: '쯔유',
         description: '일본식 간장 베이스 소스로, 간장보다 단맛이 강하고 감칠맛이 있습니다',
-        imageUrl:
-            'https://images.unsplash.com/photo-1626200419199-391ae4be7a41',
+        imageUrl: 'https://picsum.photos/seed/tsuyu/400/300',
         ratio: '1:0.8',
       ),
       Substitute(
         name: '타마리 간장',
         description: '글루텐 프리 일본 간장으로 진한 맛이 특징입니다',
-        imageUrl:
-            'https://images.unsplash.com/photo-1599909533730-f9d49c0c7e0e',
+        imageUrl: 'https://picsum.photos/seed/tamari/400/300',
         ratio: '1:1',
       ),
     ],
-    description: '한국 요리의 기본 조미료로, 국, 찌개, 볶음 등 다양한 요리에 사용됩니다',
-    imageUrl: 'https://images.unsplash.com/photo-1599909533730-f9d49c0c7e0e',
+    description: '짭짤하고 감칠맛이 나며, 국물 요리와 볶음 요리에 깊은 맛을 더해줍니다',
+    imageUrl: 'https://picsum.photos/seed/soy-sauce/400/300',
     purchaseUrl: 'https://search.shopping.naver.com/search/all?query=간장',
   ),
 
@@ -34,13 +32,12 @@ final dummyIngredients = <Ingredient>[
       Substitute(
         name: '미소된장',
         description: '일본 된장으로 매운맛은 없지만 감칠맛을 더할 수 있습니다',
-        imageUrl:
-            'https://images.unsplash.com/photo-1599909533730-f9d49c0c7e0e',
+        imageUrl: 'https://picsum.photos/seed/miso/400/300',
         ratio: '1:1',
       ),
     ],
-    description: '매콤한 맛을 내는 한국 전통 발효 조미료로 비빔밥, 찌개 등에 필수적입니다',
-    imageUrl: 'https://images.unsplash.com/photo-1626200419199-391ae4be7a41',
+    description: '매콤하고 달콤한 맛이 특징이며, 비빔밥과 찌개에 깊은 맛과 색을 더해줍니다',
+    imageUrl: 'https://picsum.photos/seed/gochujang/400/300',
     purchaseUrl: 'https://search.shopping.naver.com/search/all?query=고추장',
   ),
 
@@ -51,13 +48,12 @@ final dummyIngredients = <Ingredient>[
       Substitute(
         name: '미소된장',
         description: '일본 된장으로 한국 된장보다 부드럽고 단맛이 있습니다',
-        imageUrl:
-            'https://images.unsplash.com/photo-1599909533730-f9d49c0c7e0e',
+        imageUrl: 'https://picsum.photos/seed/miso2/400/300',
         ratio: '1:1',
       ),
     ],
-    description: '구수한 맛의 한국 전통 발효 식품으로 된장찌개, 쌈장 등에 사용됩니다',
-    imageUrl: 'https://images.unsplash.com/photo-1626200419199-391ae4be7a41',
+    description: '구수하고 깊은 감칠맛이 나며, 찌개와 국에 진한 풍미를 더해줍니다',
+    imageUrl: 'https://picsum.photos/seed/doenjang/400/300',
     purchaseUrl: 'https://search.shopping.naver.com/search/all?query=된장',
   ),
 
@@ -68,13 +64,12 @@ final dummyIngredients = <Ingredient>[
       Substitute(
         name: '고마아부라',
         description: '일본식 참기름으로 한국 참기름과 비슷하지만 향이 약간 더 고소합니다',
-        imageUrl:
-            'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5',
+        imageUrl: 'https://picsum.photos/seed/goma/400/300',
         ratio: '1:1',
       ),
     ],
-    description: '고소한 향이 특징인 참깨로 만든 기름으로 나물, 비빔밥 등에 사용됩니다',
-    imageUrl: 'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5',
+    description: '진한 고소한 향과 맛이 특징이며, 나물과 무침 요리에 풍미를 더해줍니다',
+    imageUrl: 'https://picsum.photos/seed/sesame-oil/400/300',
     purchaseUrl: 'https://search.shopping.naver.com/search/all?query=참기름',
   ),
 
@@ -85,20 +80,18 @@ final dummyIngredients = <Ingredient>[
       Substitute(
         name: '시치미',
         description: '일본 7가지 향신료 혼합물로 매운맛과 향을 더할 수 있습니다',
-        imageUrl:
-            'https://images.unsplash.com/photo-1583623025817-d180a2221d0a',
+        imageUrl: 'https://picsum.photos/seed/shichimi/400/300',
         ratio: '1:0.5',
       ),
       Substitute(
         name: '이치미',
         description: '일본 고추가루로 한국 고춧가루보다 매운맛이 강합니다',
-        imageUrl:
-            'https://images.unsplash.com/photo-1583623025817-d180a2221d0a',
+        imageUrl: 'https://picsum.photos/seed/ichimi/400/300',
         ratio: '1:0.7',
       ),
     ],
-    description: '김치, 찌개 등 매운 한국 요리에 필수적인 고추를 말려 빻은 가루입니다',
-    imageUrl: 'https://images.unsplash.com/photo-1583623025817-d180a2221d0a',
+    description: '매콤하고 은은한 단맛이 있으며, 김치와 찌개에 매운맛과 붉은 색을 더해줍니다',
+    imageUrl: 'https://picsum.photos/seed/pepper-powder/400/300',
     purchaseUrl: 'https://search.shopping.naver.com/search/all?query=고춧가루',
   ),
 
@@ -109,13 +102,12 @@ final dummyIngredients = <Ingredient>[
       Substitute(
         name: '마늘 튜브',
         description: '일본식 마늘 페이스트로 편리하게 사용할 수 있습니다',
-        imageUrl:
-            'https://images.unsplash.com/photo-1471943311424-646960669fbc',
+        imageUrl: 'https://picsum.photos/seed/garlic-tube/400/300',
         ratio: '1:1',
       ),
     ],
-    description: '한국 요리의 기본 양념으로 거의 모든 요리에 사용되는 필수 재료입니다',
-    imageUrl: 'https://images.unsplash.com/photo-1471943311424-646960669fbc',
+    description: '알싸하고 향긋한 맛이 특징이며, 거의 모든 요리에 깊은 맛을 더해줍니다',
+    imageUrl: 'https://picsum.photos/seed/garlic/400/300',
     purchaseUrl: 'https://search.shopping.naver.com/search/all?query=다진마늘',
   ),
 ];
