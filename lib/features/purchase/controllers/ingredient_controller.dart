@@ -36,10 +36,9 @@ class IngredientController extends Notifier<IngredientState> {
 
   /// 특정 재료 찾기
   Ingredient? findByName(String name) {
-    return state.ingredients.cast<Ingredient?>().firstWhere(
-      (ingredient) => ingredient?.name == name,
-      orElse: () => null,
-    );
+    return state.ingredients
+        .where((ingredient) => ingredient.name == name)
+        .firstOrNull;
   }
 
   /// 냉장고 재료 필터링 토글
