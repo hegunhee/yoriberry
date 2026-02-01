@@ -60,7 +60,9 @@ class IngredientPurchaseScreen extends ConsumerWidget {
                 ),
                 Switch(
                   value: ingredientState.hideMyFridgeIngredients,
-                  onChanged: (_) => ref.read(ingredientControllerProvider.notifier).toggleFridgeFilter(),
+                  onChanged: (_) => ref
+                      .read(ingredientControllerProvider.notifier)
+                      .toggleFridgeFilter(),
                   activeThumbColor: Colors.orange,
                 ),
               ],
