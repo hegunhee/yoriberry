@@ -11,8 +11,6 @@ class IngredientPurchaseScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final ingredientState = ref.watch(ingredientControllerProvider);
-    final controller = ref.read(ingredientControllerProvider.notifier);
-    final displayIngredients = ingredientState.filteredIngredients;
 
     return Scaffold(
       backgroundColor: Colors.grey[50],
@@ -62,7 +60,7 @@ class IngredientPurchaseScreen extends ConsumerWidget {
                 ),
                 Switch(
                   value: ingredientState.hideMyFridgeIngredients,
-                  onChanged: (_) => controller.toggleFridgeFilter(),
+                  onChanged: (_) => ref.read(ingredientControllerProvider.notifier).toggleFridgeFilter(),
                   activeThumbColor: Colors.orange,
                 ),
               ],
@@ -80,9 +78,9 @@ class IngredientPurchaseScreen extends ConsumerWidget {
                 crossAxisSpacing: 12,
                 mainAxisSpacing: 12,
               ),
-              itemCount: displayIngredients.length,
+              itemCount: ingredientState.filteredIngredients.length,
               itemBuilder: (context, index) {
-                final ingredient = displayIngredients[index];
+                final ingredient = ingredientState.filteredIngredients[index];
                 return _IngredientCard(
                   name: ingredient.name,
                   imageUrl: ingredient.imageUrl,
