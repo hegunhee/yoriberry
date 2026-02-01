@@ -14,8 +14,7 @@ class IngredientController extends Notifier<IngredientState> {
   IngredientState build() {
     return IngredientState(
       ingredients: dummyIngredients,
-      myFridgeIngredients: {'고추장', '고춧가루'},
-      hideMyFridgeIngredients: false,
+      myFridgeIngredients: myIngredients,
     );
   }
 

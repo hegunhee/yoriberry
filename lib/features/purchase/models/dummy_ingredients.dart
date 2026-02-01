@@ -111,3 +111,9 @@ final dummyIngredients = <Ingredient>[
     purchaseUrl: 'https://search.shopping.naver.com/search/all?query=다진마늘',
   ),
 ];
+
+/// 내 냉장고에 있는 재료들 더미 데이터
+final myIngredients = <String>{
+  '고추장',
+  '고춧가루',
+};
