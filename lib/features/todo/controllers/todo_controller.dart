@@ -13,7 +13,7 @@ class TodoController extends Notifier<List<Todo>> {
   List<Todo> build() {
     return [
       const Todo('디자인 시스템 구축', isDone: true),
-      const Todo('할일 앱 만들기'),1
+      const Todo('할일 앱 만들기'),12
       const Todo('배포 준비하기'),
     ];
   }
